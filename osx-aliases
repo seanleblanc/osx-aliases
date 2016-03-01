@@ -1,0 +1,10 @@
+# Flush DNS - Should work for Yosemite or newer. Other versions of OSX? 
+alias flushdns='sudo dscacheutil -flushcache;sudo killall -HUP mDNSResponder'
+
+
+# For the Jenv project: http://www.jenv.be/ 
+alias jenv_set_java_home='export JAVA_HOME="$HOME/.jenv/versions/`jenv version-name`"'
+
+
+# May work on other OSes:
+alias pids-and-ports "lsof -i -n -P"
